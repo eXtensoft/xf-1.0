@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C0A0F719-8EEF-427B-9ACA-66D6AF9ABAD5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XF.Common.Contracts</RootNamespace>
+    <AssemblyName>XF.Common.Contracts</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>..\..\dlls\packages\Microsoft.AspNet.WebApi.Client.5.2.2\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlertAudience.cs" />
+    <Compile Include="AlertCategories.cs" />
+    <Compile Include="AlertInterest.cs" />
+    <Compile Include="AlertPublisher.cs" />
+    <Compile Include="AlertServiceClient.cs" />
+    <Compile Include="AlertSubscriber.cs" />
+    <Compile Include="AlertTarget.cs" />
+    <Compile Include="AlertWriter.cs" />
+    <Compile Include="ApplicationContext.cs" />
+    <Compile Include="BindingTypeOptions.cs" />
+    <Compile Include="CacheStrategyLoader.cs" />
+    <Compile Include="CommonServicesWriter.cs" />
+    <Compile Include="CommunicationTypeOption.cs" />
+    <Compile Include="Criterion.cs" />
+    <Compile Include="DataPacket.cs" />
+    <Compile Include="DataPacketSerializer.cs" />
+    <Compile Include="DebugEventWriter.cs" />
+    <Compile Include="Error.cs" />
+    <Compile Include="ErrorItem.cs" />
+    <Compile Include="EventLogWriter.cs" />
+    <Compile Include="EventTypeOption.cs" />
+    <Compile Include="EventWriter.cs" />
+    <Compile Include="EventWriterBase.cs" />
+    <Compile Include="EventWriterLoader.cs" />
+    <Compile Include="eXAlert.cs" />
+    <Compile Include="eXBase.cs" />
+    <Compile Include="ExceptionMessage.cs" />
+    <Compile Include="ExceptionMessageOption.cs" />
+    <Compile Include="eXError.cs" />
+    <Compile Include="eXEvent.cs" />
+    <Compile Include="eXKpi.cs" />
+    <Compile Include="eXMetric.cs" />
+    <Compile Include="eXStatus.cs" />
+    <Compile Include="eXTask.cs" />
+    <Compile Include="eXtensibleConfig.cs" />
+    <Compile Include="eXtensibleFrameworkElement.cs" />
+    <Compile Include="eXtensibleFrameworkElementCollection.cs" />
+    <Compile Include="eXtensibleFrameworkSection.cs" />
+    <Compile Include="eXtensibleStrategyElement.cs" />
+    <Compile Include="eXtensibleStrategyElementCollection.cs" />
+    <Compile Include="eXtensibleStrategyResolver.cs" />
+    <Compile Include="eXtensibleStrategySection.cs" />
+    <Compile Include="eXtensibleStrategySectionGroup.cs" />
+    <Compile Include="ExtensionMethods.cs" />
+    <Compile Include="GenericDataReader.cs" />
+    <Compile Include="GenericSerializer.cs" />
+    <Compile Include="HttpService.cs" />
+    <Compile Include="IAlertPublisher.cs" />
+    <Compile Include="IAlertService.cs" />
+    <Compile Include="ICache.cs" />
+    <Compile Include="ICacheable`1.cs" />
+    <Compile Include="IConfigStrategyResolver.cs" />
+    <Compile Include="IContext.cs" />
+    <Compile Include="ICriterion.cs" />
+    <Compile Include="IDataPacketService.cs" />
+    <Compile Include="IDataRequestService.cs" />
+    <Compile Include="IDataService.cs" />
+    <Compile Include="IEventService.cs" />
+    <Compile Include="IEventWriter.cs" />
+    <Compile Include="IExecutePing.cs" />
+    <Compile Include="IeXtensibleVisitor.cs" />
+    <Compile Include="IeXtensibleVisitor`1.cs" />
+    <Compile Include="IMessage`1.cs" />
+    <Compile Include="IModelRequestService.cs" />
+    <Compile Include="IModelService.cs" />
+    <Compile Include="InformTypeOption.cs" />
+    <Compile Include="IProject.cs" />
+    <Compile Include="IRequestContext.cs" />
+    <Compile Include="IRequest`1.cs" />
+    <Compile Include="IResponse`1.cs" />
+    <Compile Include="IResponse`2.cs" />
+    <Compile Include="IRpcDataPacketService.cs" />
+    <Compile Include="IRpcDataRequestService.cs" />
+    <Compile Include="IRpcDatastoreService.cs" />
+    <Compile Include="IRpcRequestService.cs" />
+    <Compile Include="IRpcService.cs" />
+    <Compile Include="IStatusCheck.cs" />
+    <Compile Include="IStrategyResolver.cs" />
+    <Compile Include="ITypeMap.cs" />
+    <Compile Include="ITypeMapCache.cs" />
+    <Compile Include="IUserIdentityProvider.cs" />
+    <Compile Include="JsonPacket.cs" />
+    <Compile Include="KeyPairStrategyResolver.cs" />
+    <Compile Include="KpiLog.cs" />
+    <Compile Include="ListItem.cs" />
+    <Compile Include="LoggingStrategyOption.cs" />
+    <Compile Include="Message`1.cs" />
+    <Compile Include="Message`2.cs" />
+    <Compile Include="Metric.cs" />
+    <Compile Include="ModelActionOption.cs" />
+    <Compile Include="NetMemoryCache.cs" />
+    <Compile Include="NotificationSetting.cs" />
+    <Compile Include="OperatorTypeOption.cs" />
+    <Compile Include="ParamsParser.cs" />
+    <Compile Include="Partner.cs" />
+    <Compile Include="Ping.cs" />
+    <Compile Include="PluginLoader.cs" />
+    <Compile Include="ProfileItem.cs" />
+    <Compile Include="ProfileSummary.cs" />
+    <Compile Include="Projection.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RequestStatii.Designer.cs" />
+    <Compile Include="RequestStatus.cs" />
+    <Compile Include="ScaleOption.cs" />
+    <Compile Include="ServiceClient`1.cs" />
+    <Compile Include="ServiceSettings.cs" />
+    <Compile Include="SeverityType.cs" />
+    <Compile Include="SilentWriter.cs" />
+    <Compile Include="StatusCheck.cs" />
+    <Compile Include="StatusCheckServiceClient.cs" />
+    <Compile Include="StatusWriter.cs" />
+    <Compile Include="StrategyTypeOption.cs" />
+    <Compile Include="SuspensionModeOption.cs" />
+    <Compile Include="TaskTypeOption.cs" />
+    <Compile Include="TaskWriter.cs" />
+    <Compile Include="TraceEventTypeOption.cs" />
+    <Compile Include="TypedItem.cs" />
+    <Compile Include="UserData.cs" />
+    <Compile Include="WindowsIdentityProvider.cs" />
+    <Compile Include="Writer.cs" />
+    <Compile Include="XFConstants.cs" />
+    <Compile Include="XFToolWriter.cs" />
+    <Compile Include="XmlConstants.cs" />
+    <Compile Include="ZoneOption.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="RequestStatii.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

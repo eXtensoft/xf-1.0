@@ -1,0 +1,8 @@
+C:\xf-1.0\eXtensibleFramework\XF.Common.Contracts\bin\Debug\XF.Common.Contracts.dll
+C:\xf-1.0\eXtensibleFramework\XF.Common.Contracts\bin\Debug\XF.Common.Contracts.pdb
+C:\xf-1.0\eXtensibleFramework\XF.Common.Contracts\bin\Debug\System.Net.Http.Formatting.dll
+C:\xf-1.0\eXtensibleFramework\XF.Common.Contracts\bin\Debug\System.Net.Http.Formatting.xml
+C:\xf-1.0\eXtensibleFramework\XF.Common.Contracts\obj\Debug\XF.Common.Contracts.dll
+C:\xf-1.0\eXtensibleFramework\XF.Common.Contracts\obj\Debug\XF.Common.Contracts.pdb
+C:\xf-1.0\eXtensibleFramework\XF.Common.Contracts\obj\Debug\XF.Common.Contracts.RequestStatii.resources
+C:\xf-1.0\eXtensibleFramework\XF.Common.Contracts\obj\Debug\XF.Common.Contracts.csproj.GenerateResource.Cache
