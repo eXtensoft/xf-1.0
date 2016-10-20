@@ -1,9 +1,0 @@
-C:\xf-1.0\eXtensibleFramework\XF.Common\obj\Debug\XF.Common.csprojResolveAssemblyReference.cache
-C:\xf-1.0\eXtensibleFramework\XF.Common\bin\Debug\XF.Common.dll
-C:\xf-1.0\eXtensibleFramework\XF.Common\bin\Debug\XF.Common.pdb
-C:\xf-1.0\eXtensibleFramework\XF.Common\bin\Debug\XF.Common.Contracts.dll
-C:\xf-1.0\eXtensibleFramework\XF.Common\bin\Debug\XF.Common.Contracts.pdb
-C:\xf-1.0\eXtensibleFramework\XF.Common\obj\Debug\XF.Common.dll
-C:\xf-1.0\eXtensibleFramework\XF.Common\obj\Debug\XF.Common.pdb
-C:\xf-1.0\eXtensibleFramework\XF.Common\bin\Debug\System.Net.Http.Formatting.dll
-C:\xf-1.0\eXtensibleFramework\XF.Common\bin\Debug\System.Net.Http.Formatting.xml
